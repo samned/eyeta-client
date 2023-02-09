@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <application
-        android:name="org.traccar.client.GoogleMainApplication"
+        android:name="com.eyeta.client.MainApplication"
         tools:replace="android:name"
         tools:ignore="GoogleAppIndexingWarning">
 

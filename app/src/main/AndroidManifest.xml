@@ -25,7 +25,7 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme"
-        android:name=".MainApplication"
+        android:name="com.eyeta.client.MainApplication"
         tools:ignore="GoogleAppIndexingWarning,UnusedAttribute">
 
         <meta-data
@@ -33,14 +33,14 @@
             android:value="false" />
 
         <activity
-            android:name=".MainActivity"
+            android:name="com.eyeta.client.MainActivity"
             android:exported="true"
             android:launchMode="singleTask" />
 
         <activity-alias
             android:name=".Launcher"
             android:exported="true"
-            android:targetActivity=".MainActivity">
+            android:targetActivity="com.eyeta.client.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
@@ -51,11 +51,11 @@
         </activity-alias>
 
         <activity
-            android:name=".StatusActivity"
+            android:name="com.eyeta.client.StatusActivity"
             android:exported="false" />
 
         <activity
-            android:name=".ShortcutActivity"
+            android:name="com.eyeta.client.ShortcutActivity"
             android:exported="true"
             android:label="@string/menu_shortcuts">
             <intent-filter>
@@ -67,16 +67,16 @@
         </activity>
 
         <service
-            android:name=".TrackingService"
+            android:name="com.eyeta.client.TrackingService"
             android:exported="false"
             android:foregroundServiceType="location" />
 
         <service
-            android:name=".TrackingService$HideNotificationService"
+            android:name="com.eyeta.client.TrackingService$HideNotificationService"
             android:exported="false" />
 
         <receiver
-            android:name=".AutostartReceiver"
+            android:name="com.eyeta.client.AutostartReceiver"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
